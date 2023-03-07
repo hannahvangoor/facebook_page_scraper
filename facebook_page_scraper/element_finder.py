@@ -401,7 +401,7 @@ class Finder:
     def __accept_cookies(driver):
         try:
             button = driver.find_elements(
-                By.CSS_SELECTOR, '[aria-label="Allow essential and optional cookies"]'
+                By.CSS_SELECTOR, '[aria-label="Essentiële en optionele cookies toestaan"]'
             )
             button[-1].click()
         except (NoSuchElementException, IndexError):
